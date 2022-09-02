@@ -1,7 +1,7 @@
 import React from "react";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
-import { Stacked, Pie, Button, SparkLine } from "../components";
+import { Stacked, Pie, Button, SparkLine } from "../components/";
 import {
   earningData,
   SparklineAreaData,
@@ -56,7 +56,7 @@ const Ecommerce = () => {
       <div className="flex gap-10 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780">
           <div className="flex justify-between">
-            <p className="font-semibold text-xl">Revenue Upadates</p>
+            <p className="font-semibold text-xl">Revenue Updates</p>
             <div className="flex items-center gap-4">
               <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
                 <span>
@@ -95,8 +95,22 @@ const Ecommerce = () => {
                   id="line-sparkline"
                   type="Line"
                   height="80px"
+                  width="250px"
+                  data={SparklineAreaData}
+                  color="blue"
                 />
               </div>
+              <div className="mt-10">
+                <Button
+                  color="white"
+                  bgColor="blue"
+                  text="Download Report"
+                  borderRadius="10px"
+                />
+              </div>
+            </div>
+            <div>
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
         </div>
