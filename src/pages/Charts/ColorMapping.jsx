@@ -28,7 +28,7 @@ const ColorMapping = () => {
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
       <Header
         category="Color Mappping"
-        title="USA Climate - Weather by Month"
+        title="Nigeria Climate - Weather by Month"
       />
       <div className="w-full">
         <ChartComponent
@@ -44,7 +44,7 @@ const ColorMapping = () => {
           <SeriesCollectionDirective>
             <SeriesDirective
               dataSource={colorMappingData[0]}
-              name="USA"
+              name="NIG"
               xName="x"
               yName="y"
               type="Column"

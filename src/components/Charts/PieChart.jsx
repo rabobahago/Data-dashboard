@@ -12,7 +12,7 @@ import {
 
 import { useStateContext } from "../../contexts/ContextProvider";
 
-const Doughnut = ({ id, data, legendVisiblity, height }) => {
+const PieChart = ({ id, data, legendVisiblity, height }) => {
   const { currentMode } = useStateContext();
 
   return (
@@ -59,4 +59,4 @@ const Doughnut = ({ id, data, legendVisiblity, height }) => {
   );
 };
 
-export default Doughnut;
+export default PieChart;
