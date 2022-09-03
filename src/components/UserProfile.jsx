@@ -34,7 +34,7 @@ const UserProfile = () => {
           </p>
           <p className="text-gray-500 text-sm dark:text-gray-400">
             {" "}
-            Administrator{" "}
+            Software Engineer{" "}
           </p>
           <p className="text-gray-500 text-sm font-semibold dark:text-gray-400">
             {" "}

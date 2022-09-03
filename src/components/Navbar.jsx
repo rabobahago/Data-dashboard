@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineBars } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsChatLeft } from "react-icons/bs";
 import { RiNotification3Line } from "react-icons/ri";
@@ -64,7 +64,7 @@ const Navbar = () => {
         title="Menu"
         customFunc={handleActiveMenu}
         color={currentColor}
-        icon={<AiOutlineMenu />}
+        icon={<AiOutlineBars />}
       />
       <div className="flex">
         <NavButton
@@ -99,9 +99,7 @@ const Navbar = () => {
             />
             <p>
               <span className="text-gray-400 text-14">Hi,</span>{" "}
-              <span className="text-gray-400 font-bold ml-1 text-14">
-                Michael
-              </span>
+              <span className="text-gray-400 font-bold ml-1 text-14">Rabo</span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
           </div>
