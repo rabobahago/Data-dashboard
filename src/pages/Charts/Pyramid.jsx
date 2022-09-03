@@ -13,7 +13,7 @@ import {
 
 import { PyramidData } from "../../data/dummy";
 import { useStateContext } from "../../contexts/ContextProvider";
-import { Header } from "../../components";
+import { Header, Footer } from "../../components";
 
 const Pyramid = () => {
   const { currentMode } = useStateContext();
@@ -59,6 +59,7 @@ const Pyramid = () => {
           </AccumulationSeriesCollectionDirective>
         </AccumulationChartComponent>
       </div>
+      <Footer />
     </div>
   );
 };

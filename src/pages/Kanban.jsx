@@ -5,7 +5,7 @@ import {
   ColumnDirective,
 } from "@syncfusion/ej2-react-kanban";
 import { kanbanData, kanbanGrid } from "../data/dummy";
-import { Header } from "../components";
+import { Header, Footer } from "../components";
 
 const Kanban = () => {
   return (
@@ -23,6 +23,9 @@ const Kanban = () => {
           ))}
         </ColumnsDirective>
       </KanbanComponent>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

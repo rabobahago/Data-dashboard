@@ -8,7 +8,7 @@ import {
   Legend,
   SplineAreaSeries,
 } from "@syncfusion/ej2-react-charts";
-import { Header } from "../../components";
+import { Header, Footer } from "../../components";
 import {
   areaCustomSeries,
   areaPrimaryYAxis,
@@ -39,6 +39,7 @@ const Area = () => {
           </SeriesCollectionDirective>
         </ChartComponent>
       </div>
+      <Footer />
     </div>
   );
 };

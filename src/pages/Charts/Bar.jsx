@@ -16,7 +16,7 @@ import {
   barPrimaryXAxis,
   barPrimaryYAxis,
 } from "../../data/dummy";
-import { Header } from "../../components";
+import { Header, Footer } from "../../components";
 import { useStateContext } from "../../contexts/ContextProvider";
 
 const Bar = () => {
@@ -46,6 +46,7 @@ const Bar = () => {
           </SeriesCollectionDirective>
         </ChartComponent>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -4,7 +4,6 @@ import {
   ColumnDirective,
   ColumnsDirective,
   Resize,
-  Context,
   Sort,
   ContextMenu,
   Filter,
@@ -14,8 +13,8 @@ import {
   Edit,
   Inject,
 } from "@syncfusion/ej2-react-grids";
-import { ordersData, contextMenuItems, ordersGrid } from "../data/dummy";
-import { Header } from "../components";
+import { ordersData, ordersGrid } from "../data/dummy";
+import { Header, Footer } from "../components";
 const Orders = () => {
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
@@ -44,6 +43,7 @@ const Orders = () => {
           ]}
         />
       </GridComponent>
+      <Footer />
     </div>
   );
 };

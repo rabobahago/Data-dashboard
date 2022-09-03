@@ -18,7 +18,7 @@ import {
   ColorMappingPrimaryYAxis,
   rangeColorMapping,
 } from "../../data/dummy";
-import { Header } from "../../components";
+import { Header, Footer } from "../../components";
 import { useStateContext } from "../../contexts/ContextProvider";
 
 const ColorMapping = () => {
@@ -62,6 +62,7 @@ const ColorMapping = () => {
           </RangeColorSettingsDirective>
         </ChartComponent>
       </div>
+      <Footer />
     </div>
   );
 };

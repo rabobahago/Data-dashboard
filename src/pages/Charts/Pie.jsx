@@ -1,7 +1,7 @@
 import React from "react";
 
 import { pieChartData } from "../../data/dummy";
-import { Header, PieChart } from "../../components";
+import { Header, PieChart, Footer } from "../../components";
 
 const Pie = () => (
   <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
@@ -14,6 +14,7 @@ const Pie = () => (
         height="full"
       />
     </div>
+    <Footer />
   </div>
 );
 

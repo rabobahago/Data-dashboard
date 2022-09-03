@@ -9,7 +9,7 @@ import {
   Toolbar,
 } from "@syncfusion/ej2-react-grids";
 import { employeesData, employeesGrid } from "../data/dummy";
-import { Header } from "../components";
+import { Header, Footer } from "../components";
 const Employees = () => {
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
@@ -28,6 +28,7 @@ const Employees = () => {
         </ColumnsDirective>
         <Inject services={[Page, Search, Toolbar]} />
       </GridComponent>
+      <Footer />
     </div>
   );
 };

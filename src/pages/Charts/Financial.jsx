@@ -18,7 +18,7 @@ import {
   FinancialPrimaryYAxis,
 } from "../../data/dummy";
 import { useStateContext } from "../../contexts/ContextProvider";
-import { Header } from "../../components";
+import { Header, Footer } from "../../components";
 
 const date1 = new Date("2017, 1, 1");
 
@@ -70,6 +70,7 @@ const Financial = () => {
           </SeriesCollectionDirective>
         </ChartComponent>
       </div>
+      <Footer />
     </div>
   );
 };
