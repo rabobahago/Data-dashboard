@@ -23,7 +23,7 @@ const Area = () => {
       <Header category="Area" title="Inflation Rate in Percentage" />
       <div className="w-full">
         <ChartComponent
-          id="area-chart"
+          id="area -chart"
           height="420px"
           primaryXAxis={areaPrimaryXAxis}
           primaryYAxis={areaPrimaryYAxis}
