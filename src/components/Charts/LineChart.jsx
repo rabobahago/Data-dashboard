@@ -4,20 +4,22 @@ import {
   SeriesCollectionDirective,
   SeriesDirective,
   Inject,
+  LineSeries,
   DateTime,
   Legend,
   Tooltip,
-  LineSeries,
 } from "@syncfusion/ej2-react-charts";
+
 import {
   lineCustomSeries,
-  LinePrimaryYAxis,
   LinePrimaryXAxis,
+  LinePrimaryYAxis,
 } from "../../data/dummy";
 import { useStateContext } from "../../contexts/ContextProvider";
 
-const Line = () => {
+const LineChart = () => {
   const { currentMode } = useStateContext();
+
   return (
     <ChartComponent
       id="line-chart"
@@ -26,10 +28,12 @@ const Line = () => {
       primaryYAxis={LinePrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
-      background={currentMode === "Dark" ? "#33373E" : "#FFF"}
+      background={currentMode === "Dark" ? "#33373E" : "#fff"}
+      legendSettings={{ background: "white" }}
     >
       <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
       <SeriesCollectionDirective>
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {lineCustomSeries.map((item, index) => (
           <SeriesDirective key={index} {...item} />
         ))}
@@ -38,4 +42,4 @@ const Line = () => {
   );
 };
 
-export default Line;
+export default LineChart;
